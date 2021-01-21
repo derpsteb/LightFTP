@@ -1,0 +1,22 @@
+set_robust_list(0x7f65e646b920, 24)     = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+write(1, "[FITM] Let's start ftpmain\n", 27) = 27
+socket(AF_INET, SOCK_STREAM, IPPROTO_TCP) = 4
+setsockopt(4, SOL_SOCKET, SO_REUSEADDR, [1], 4) = 0
+mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7f65ddc6b000
+munmap(0x7f65ddc6b000, 37310464)        = 0
+munmap(0x7f65e4000000, 29798400)        = 0
+mprotect(0x7f65e0000000, 135168, PROT_READ|PROT_WRITE) = 0
+bind(4, {sa_family=AF_INET, sin_port=htons(2200), sin_addr=inet_addr("127.0.0.1")}, 16) = 0
+openat(AT_FDCWD, "/etc/localtime", O_RDONLY|O_CLOEXEC) = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=2298, ...}) = 0
+fstat(5, {st_mode=S_IFREG|0644, st_size=2298, ...}) = 0
+read(5, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\t\0\0\0\t\0\0\0\0"..., 4096) = 2298
+lseek(5, -1449, SEEK_CUR)               = 849
+read(5, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\t\0\0\0\t\0\0\0\0"..., 4096) = 1449
+close(5)                                = 0
+write(3, "21-01-2021 16:21:47 : 220 LightF"..., 57) = 57
+write(1, "21-01-2021 16:21:47 : 220 LightF"..., 57) = 57
+listen(4, 4096)                         = 0
+accept(4,  <unfinished ...>)            = ?
++++ killed by SIGINT +++
