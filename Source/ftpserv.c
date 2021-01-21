@@ -1972,6 +1972,7 @@ void *ftp_client_thread(SOCKET *s)
 
 void *ftpmain(void *p)
 {
+	printf("[FITM] Let's start ftpmain\n");
 	struct sockaddr_in	laddr;
 
 	int		ftpsocket = INVALID_SOCKET,

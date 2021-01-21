@@ -187,7 +187,7 @@ int main(int argc, char *argv[])
 			printf("Error: Failed to create main server thread\r\n");
 			break;
 		}
-
+		printf("[FITM] Went the wrong way\n");
 		do {
 			c = getc(stdin);
 			sleep(1);
