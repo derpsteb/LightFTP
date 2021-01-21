@@ -1,0 +1,38 @@
+set_robust_list(0x7f9904b9b920, 24)     = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7f98f8000000
+munmap(0x7f98fc000000, 67108864)        = 0
+mprotect(0x7f98f8000000, 135168, PROT_READ|PROT_WRITE) = 0
+getsockname(5, {sa_family=AF_INET, sin_port=htons(2200), sin_addr=inet_addr("127.0.0.1")}, [16]) = 0
+getpeername(5, {sa_family=AF_INET, sin_port=htons(49582), sin_addr=inet_addr("127.0.0.1")}, [16]) = 0
+sendto(5, "220 LightFTP server v2.0a ready\r"..., 33, MSG_NOSIGNAL, NULL, 0) = 33
+write(3, "21-01-2021 10:14:42 S-id=1 : <- "..., 61) = 61
+write(1, "21-01-2021 10:14:42 S-id=1 : <- "..., 61) = 61
+recvfrom(5, "USER anonymous\r\n", 8191, 0, NULL, NULL) = 16
+write(3, "21-01-2021 10:14:46 S-id=1 :  US"..., 47) = 47
+write(1, "21-01-2021 10:14:46 S-id=1 :  US"..., 47) = 47
+sendto(5, "331 User anonymous OK. Password "..., 42, MSG_NOSIGNAL, NULL, 0) = 42
+write(3, "21-01-2021 10:14:46 S-id=1 :  @@"..., 54) = 54
+write(1, "21-01-2021 10:14:46 S-id=1 :  @@"..., 54) = 54
+recvfrom(5, "PASS *\r\n", 8191, 0, NULL, NULL) = 8
+write(3, "21-01-2021 10:14:47 S-id=1 :  PA"..., 54) = 54
+write(1, "21-01-2021 10:14:47 S-id=1 :  PA"..., 54) = 54
+sendto(5, "230 User logged in, proceed.\r\n", 30, MSG_NOSIGNAL, NULL, 0) = 30
+write(3, "21-01-2021 10:14:47 S-id=1 :  @@"..., 48) = 48
+write(1, "21-01-2021 10:14:47 S-id=1 :  @@"..., 48) = 48
+recvfrom(5, "SYST\r\n", 8191, 0, NULL, NULL) = 6
+sendto(5, "215 UNIX Type: L8\r\n", 19, MSG_NOSIGNAL, NULL, 0) = 19
+write(3, "21-01-2021 10:14:47 S-id=1 :  @@"..., 44) = 44
+write(1, "21-01-2021 10:14:47 S-id=1 :  @@"..., 44) = 44
+recvfrom(5, "QUIT\r\n", 8191, 0, NULL, NULL) = 6
+write(3, "21-01-2021 10:14:49 S-id=1 :  QU"..., 36) = 36
+write(1, "21-01-2021 10:14:49 S-id=1 :  QU"..., 36) = 36
+sendto(5, "221 Goodbye!\r\n", 14, MSG_NOSIGNAL, NULL, 0) = 14
+write(3, "21-01-2021 10:14:49 S-id=1 :  @@"..., 44) = 44
+write(1, "21-01-2021 10:14:49 S-id=1 :  @@"..., 44) = 44
+write(3, "21-01-2021 10:14:49 S-id=1 : Use"..., 48) = 48
+write(1, "21-01-2021 10:14:49 S-id=1 : Use"..., 48) = 48
+close(5)                                = 0
+madvise(0x7f990439b000, 8368128, MADV_DONTNEED) = 0
+exit(0)                                 = ?
++++ exited with 0 +++
